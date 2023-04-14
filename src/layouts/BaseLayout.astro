@@ -1,7 +1,10 @@
 ---
-const adds=[
+import '../base.css'
+import Nav from '@components/Nav.svelte';
+const aadds=[
     {name:'home',link:'/'},
     {name:'blog',link:'/blog'},
+    {name:'test1',link:'/test1'},
 ]
 ---
 <!DOCTYPE html>
@@ -13,10 +16,10 @@ const adds=[
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        {adds.map((x)=><a href={x.link}>{x.name}</a>)}
-    </nav>
-    <hr>
+    <Nav client:visible adds={aadds}></Nav>
+    
+   
+    
     <slot></slot>
 </body>
 </html>

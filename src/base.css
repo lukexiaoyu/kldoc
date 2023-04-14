@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-5xl text-blue-700 
+    }
+    h2{
+        @apply text-3xl text-green-700 
+    }
+}
+@layer components{
+    .btn{
+        @apply border-2 bg-blue-200 hover:bg-green-200 p-2
+    }
+    .box{
+        @apply shadow-md shadow-gray-200 rounded-md p-1
+    }
+}

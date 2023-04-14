@@ -1,8 +1,10 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro"
+import BaseLayout from "@base"
+import One from "@components/One.svelte";
 
 ---
 
 <BaseLayout>
 <h1>home page</h1>
+<One client:visible></One>
 </BaseLayout>

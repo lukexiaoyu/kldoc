@@ -1,8 +1,6 @@
 ---
-layout: ../../../layouts/BaseLayout.astro
+title: blog home
+layout: "@blog"
 ---
 
 # blog home page
-
-- [one](/blog/one)
-- [two](/blog/two)
